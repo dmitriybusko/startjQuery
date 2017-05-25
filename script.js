@@ -1,20 +1,10 @@
 $(document).ready(function () {
 
-    $(".news").click(function () {
+    $(".tabs").click(function (event) {
         $(".content").removeClass("contentActive");
         $(".tab").removeClass("tabActive");
-        $("p.news").addClass("contentActive");
-        $("div.news").addClass("tabActive");
+        $(".fieldContent div."+event.target.className.split(" ")[1]).addClass("contentActive");
+        $(event.target).addClass("tabActive");
     });
-
-    $(".weather").click(function () {
-        $(".content").removeClass("contentActive");
-        $(".tab").removeClass("tabActive");
-        $("p.weather").addClass("contentActive");
-        $("div.weather").addClass("tabActive");
-    });
-
-
- 
 
 });

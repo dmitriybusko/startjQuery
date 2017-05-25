@@ -6,7 +6,7 @@ body{
 }
 .navigation{
 	width: 1000px;
-	min-height: 600px;
+	height: 600px;
 	border: 5px solid #a52525;
   border-radius: 5px;
   background: #d9dfff;
@@ -16,17 +16,20 @@ body{
 	min-height: 50px;
 	background: #6989b9;
 	cursor: pointer;
+	overflow: hidden;
 }
 .content{
 	width: 1000px;
-	min-height: 550px;
+	height: 550px;
+	box-sizing: border-box;
 }
-p{
+.content{
 	margin: 0;
 	display: none;
+	padding: 10px;
 }
 .contentActive{
-	display: inline;
+	display: block;
 }
 .tab{
 	height: 50px;
@@ -49,4 +52,8 @@ p{
 	align-items: center;
 	justify-content: center;
 	background: #d9dfff;
+}
+img{
+	width: 500px;
+	float: left;
 }
